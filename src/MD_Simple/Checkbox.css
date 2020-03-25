@@ -8,6 +8,7 @@
   align-items: center;
   color: #6D6D6D;
   cursor: pointer;
+  transition: 0.15s;
 }
 
 .check-label-disable {
@@ -17,6 +18,7 @@
   color: #6D6D6D;
   cursor: normal;
   opacity: 0.5;
+  transition: 0.15s;
 }
 
 .fake {
