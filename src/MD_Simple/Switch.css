@@ -1,0 +1,114 @@
+.switch-line {
+  position: relative;
+  top: -20px;
+  height: 16px;
+  width: 36px;
+  border-radius: 20px;
+  background-color: #ACACAC;
+  overflow: hidden;
+}
+
+.switch-outer {
+  height: 16px;
+  width: 36px;
+  border-radius: 20px;
+  background-color: #ACACAC;
+  margin-top: 330px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.switch-outer-disabled {
+  height: 16px;
+  width: 36px;
+  border-radius: 20px;
+  background-color: #ACACAC;
+  margin-top: 330px;
+  cursor: normal;
+  opacity: 0.5;
+  transition: 0.15s;
+}
+
+.switch-dot {
+  position: relative;
+  top: -2px;
+  left: -2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 4px -2px grey;
+  z-index: 1;
+  transition: 0.15s;
+  outline: none;
+}
+
+#switch-dot:hover {
+  box-shadow: 0px 1px 4px -2px grey, 0px 0px .5px 7px rgba(172, 172, 172, 0.5);
+  transition: 0.15s;
+}
+
+#switch-dot-active:hover {
+  box-shadow: 0px 1px 4px -2px grey, 0px 0px 0.5px 7px rgba(114, 137, 218, 0.5);
+  transition: 0.15s;
+}
+
+.switch-dot-active {
+  position: relative;
+  top: -2px;
+  left: 18px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #7289da;
+  box-shadow: 0px 1px 4px -2px grey;
+  z-index: 1;
+  transition: 0.15s;
+  outline: none;
+}
+
+.switch-dot-foc {
+  position: relative;
+  top: -2px;
+  left: -2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 4px -2px grey, 0px 0px .5px 7px rgba(172, 172, 172, 0.5);
+  z-index: 1;
+  transition: 0.15s;
+  outline: none;
+}
+
+.switch-dot-active-foc {
+  position: relative;
+  top: -2px;
+  left: 18px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #7289da;
+  box-shadow: 0px 1px 4px -2px grey, 0px 0px 0.5px 7px rgba(114, 137, 218, 0.5);
+  z-index: 1;
+  transition: 0.15s;
+  outline: none;
+}
+
+.switch-line-color {
+  position: relative;
+  background-color: #9aabe5;
+  height: 16px;
+  width: 0px;
+  border-radius: 20px;
+  transition: 0.15s;
+}
+
+.switch-line-color-active {
+  position: relative;
+  background-color: #9aabe5;
+  height: 16px;
+  width: 36px;
+  border-radius: 20px;
+  transition: 0.15s;
+}

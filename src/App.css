@@ -1,38 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+.disable-container {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.disable-container > button:focus {
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0px 0px .5px 2px rgba(172, 172, 172, 0.5);
+}
+
+.disable-container > .button-on {
+  border: none;
+  height: 23px;
+  width: 68px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #7289da;
   color: white;
+  transition: 0.15s;
 }
 
-.App-link {
-  color: #61dafb;
+.disable-container > .button-off {
+  border: none;
+  height: 23px;
+  width: 68px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #ff3f34;
+  color: white;
+  border-radius: 8px;
+  transition: 0.15s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disable-container > .button-on:hover {
+  color: white;
+  background-color: #7289da;
+  opacity: 0.8;
+  transition: 0.15s;
+}
+
+.disable-container > .button-off:hover {
+  color: white;
+  background-color: #ff3f34;
+  opacity: 0.8;
+  transition: 0.15s;
+}
+
+h2 {
+  color: #6D6D6D;
+  font-weight: normal;
+  font-size: 27px;
 }
